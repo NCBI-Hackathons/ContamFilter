@@ -1,0 +1,6 @@
+db:
+  class: File
+  path: /home/ubuntu/data/contam-dbs/rRNA_BLASTdb/rrna
+query:
+  class: File
+  path: /home/ubuntu/data/test/pa_test.fa
