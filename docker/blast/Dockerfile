@@ -29,6 +29,15 @@ RUN tar zxvf ncbi-blast-2.7.1+-x64-linux.tar.gz
 RUN mkdir -p /home/ubuntu/bin/
 RUN cp ncbi-blast-2.7.1+/bin/* /home/ubuntu/bin/.
 
+# get and setup vecscreen applications
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/blast/demo/vecscreen
+RUN chmod 775 vecscreen
+RUN mv vecscreen /home/ubuntu/bin/.
+
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/kitts/VSlistTo1HitPerLine.awk
+RUN chmod 775 VSlistTo1HitPerLine.awk
+RUN mv VSlistTo1HitPerLine.awk /home/ubuntu/bin/.
+
 # ENV VAR VALUE - add the blast bin directory to the path
 ENV PATH /home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV HOME /home/ubuntu
