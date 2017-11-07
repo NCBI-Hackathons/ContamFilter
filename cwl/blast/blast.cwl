@@ -10,7 +10,7 @@ inputs:
   - id: query
     type: File
     inputBinding:
-      position: 2
+      position: 1
       prefix: -query
 
 outputs:
