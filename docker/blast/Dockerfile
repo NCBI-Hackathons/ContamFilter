@@ -52,13 +52,6 @@ WORKDIR /home/ubuntu/contam-dbs/contam_in_prok/
 RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/kitts/contam_in_prok.fa
 RUN makeblastdb -in contam_in_prok.fa -dbtype nucl
 
-# adaptors_for_screening
-WORKDIR /home/ubuntu/contam-dbs/
-RUN mkdir -p adaptors_for_screening
-WORKDIR /home/ubuntu/contam-dbs/adaptors_for_screening/
-RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/kitts/adaptors_for_screening.fa
-RUN makeblastdb -in adaptors_for_screening.fa -dbtype nucl
-
 # adaptors_for_screening_euks
 WORKDIR /home/ubuntu/contam-dbs/
 RUN mkdir -p adaptors_for_screening_euks
