@@ -14,11 +14,7 @@ The goal of this project is to implement an externalized version of the pipeline
 ## Key tasks, current roadblocks.
 Current status: CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
 
-Roadblocks: NCBI Internal pipeline C++ code and toolkit is not accessible externally; mitigated by obtaining original .  Contamination sequence databases are not documented.  Input data such as chromosome sequence is very large, currently using a subset contaminant database.
-
-## Why should we solve it?
-
-# What is <this software>?
+Roadblocks: NCBI Internal pipeline C++ code and toolkit is not accessible externally; mitigated by obtaining original shell scripts.  Contamination sequence databases are not documented; creating doi's for contaminant database contents.  Input data such as chromosome sequence is very large; currently using a subset contaminant database. Implementation of Docker ongoing.
 
 Overview Diagram
 
