@@ -1,7 +1,7 @@
 # Genome Contamination Screening Pipeline Implemented in CWL for External Users
 
 ## Awesome Logo
-
+![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Logo.png?sanitize=true)
 ## Link to DOI
 
 ### You can make a free DOI with zenodo <link>
