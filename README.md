@@ -9,8 +9,14 @@
 ## Website (if applicable)
 
 ## Intro statement
+Both technical and biological contaminants may appear in raw, assembled, and annotated sequence data.  Contaminants may include ‘technical’ sequences such as vector and adapter sequence or ‘biological’ sequences derived from commensal or parasitic DNA isolated with the parent samples, or may result from mislabeling of read data. These may include mitochondrial sequence, rRNA, and can be viral, microbial, or eukaryotic derived sequence.  Legitimate (non-contaminating) may be present in genomic read data or assemblies, representing horizontal gene transfer events.
+
+NCBI implements a contamination-screening pipeline for screening of technical and biological contamination in genomic data (Fig. 1). 
+
+The goal of this project is to implement an externalized version of the pipeline and provide functionality for searches using user-defined contamination files and taxonomic subsets. 
 
 ## What's the problem?
+NCBI Internal pipeline C++ code and toolkit is not accessible externally.  Contamination sequence databases are not documented.  Input data such as chromosome sequence is very large.
 
 ## Why should we solve it?
 
