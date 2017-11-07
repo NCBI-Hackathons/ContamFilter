@@ -75,6 +75,13 @@ WORKDIR /home/ubuntu/contam-dbs/adaptors_for_screening_proks/
 RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/kitts/adaptors_for_screening_proks.fa
 RUN makeblastdb -in adaptors_for_screening_proks.fa -dbtype nucl
 
+# mito
+WORKDIR /home/ubuntu/contam-dbs/
+RUN mkdir -p mito
+WORKDIR /home/ubuntu/contam-dbs/mito/
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/mito.nt.gz
+RUN gunzip mito.nt.gz
+RUN makeblastdb -in mito.nt -dbtype nucl
 
 WORKDIR /home/ubuntu
 
