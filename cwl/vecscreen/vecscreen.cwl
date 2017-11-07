@@ -11,11 +11,14 @@ inputs:
     inputBinding:
       position: 1
       prefix: -i
-
+  - id: outputfile
+    type: string
+    inputBinding:
+      position: 2
+      prefix: -o
 outputs:
   - id: output
     type: File
     outputBinding:
-      position: 2
-      glob: output.txt
-      prefix: -o
+      glob: $(inputs.outputfile)
+
