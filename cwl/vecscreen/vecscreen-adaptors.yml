@@ -2,4 +2,4 @@ database: /home/ubuntu/contam-dbs/adaptors_for_screening_euks/adaptors_for_scree
 query:
   class: File
   path: /home/ubuntu/data/test/pa_test.fa
-outputfile: output.txt
+outputfile: output-adaptors.txt

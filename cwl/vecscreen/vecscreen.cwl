@@ -9,7 +9,7 @@ inputs:
   - id: database
     type: string
     inputBinding:
-      position 1
+      position: 1
       prefix: -d
   - id: query
     type: File
