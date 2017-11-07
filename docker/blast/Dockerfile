@@ -83,6 +83,21 @@ RUN wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/mito.nt.gz
 RUN gunzip mito.nt.gz
 RUN makeblastdb -in mito.nt -dbtype nucl
 
+# rRNA
+WORKDIR /home/ubuntu/contam-dbs/
+RUN mkdir -p rrna
+WORKDIR /home/ubuntu/contam-dbs/rrna/
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/kitts/rrna.gz
+RUN gunzip rrna.gz
+RUN makeblastdb -in rrna -dbtype nucl
+
+# UniVec
+WORKDIR /home/ubuntu/contam-dbs/
+RUN mkdir -p UniVec
+WORKDIR /home/ubuntu/contam-dbs/UniVec/
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec 
+RUN makeblastdb -in UniVec -dbtype nucl
+
 WORKDIR /home/ubuntu
 
 CMD ["/bin/bash"]
