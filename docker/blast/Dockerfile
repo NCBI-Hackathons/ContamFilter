@@ -32,6 +32,14 @@ RUN cp ncbi-blast-2.7.1+/bin/* /home/ubuntu/bin/.
 # ENV VAR VALUE - add the blast bin directory to the path
 ENV PATH /home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV HOME /home/ubuntu
+
+RUN mkdir -p /home/ubuntu/contam-dbs/
+WORKDIR /home/ubuntu/contam-dbs/
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/kitts/contam_in_euks.fa.gz
+RUN gunzip contam_in_euks.fa.gz
+
+RUN makeblastdb -in contam_in_euks.fa -dbtype nucl
+
 WORKDIR /home/ubuntu
 
 CMD ["/bin/bash"]
