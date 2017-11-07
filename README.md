@@ -4,19 +4,17 @@
 ![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Logo.png?sanitize=true)
 ## Link to DOI
 
-### You can make a free DOI with zenodo <link>
-
-## Website (if applicable)
-
-## Intro statement
+## Introduction 
 Both technical and biological contaminants may appear in raw, assembled, and annotated sequence data.  Contaminants may include ‘technical’ sequences such as vector and adapter sequence or ‘biological’ sequences derived from commensal or parasitic DNA isolated with the parent samples, or may result from mislabeling of read data. These may include mitochondrial sequence, rRNA, and can be viral, microbial, or eukaryotic derived sequence.  Legitimate (non-contaminating) may be present in genomic read data or assemblies, representing horizontal gene transfer events.
 
-NCBI implements a contamination-screening pipeline for screening of technical and biological contamination in genomic data  (Fig. 1).  Internal implementation uses Gpipe (FSCR 3.0) 
+NCBI implements a contamination-screening pipeline for screening of technical and biological contamination in genomic data  (Fig. 1).  Internal implementation uses Gpipe (FSCR 3.0), C++. 
 
-The goal of this project is to implement an externalized version of the pipeline and provide functionality for searches using user-defined contamination files and taxonomic subsets. 
+The goal of this project is to implement an externalized version of the pipeline and provide functionality for searches using user-defined contamination files and taxonomic subsets. Pipeline uses Common Workflow Language (CWL) with Docker, incorporating the original . 
 
-## What's the problem?
-NCBI Internal pipeline C++ code and toolkit is not accessible externally.  Contamination sequence databases are not documented.  Input data such as chromosome sequence is very large.
+## Key tasks, current roadblocks.
+Current status: CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
+
+Roadblocks: NCBI Internal pipeline C++ code and toolkit is not accessible externally; mitigated by obtaining original .  Contamination sequence databases are not documented.  Input data such as chromosome sequence is very large, currently using a subset contaminant database.
 
 ## Why should we solve it?
 
