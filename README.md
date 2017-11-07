@@ -12,7 +12,18 @@ NCBI implements a contamination-screening pipeline for screening of technical an
 The goal of this project is to implement an externalized version of the pipeline and provide functionality for searches using user-defined contamination files and taxonomic subsets. Pipeline uses Common Workflow Language (CWL) with Docker, incorporating the original . 
 
 ## Key tasks, current roadblocks.
-Current status: CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
+Current status: 
+CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
+
+Contamination sequence files include:
+
+1. a common contaminants database that contains vector sequences, bacterial insertion sequences, E. coli and phage genomes
+
+2. a database of adaptors linkers and primers
+
+3. a database of mitochondrial genomes
+
+4. the chromosomes of unrelated organisms
 
 Roadblocks: NCBI Internal pipeline C++ code and toolkit is not accessible externally; mitigated by obtaining original shell scripts.  Contamination sequence databases are not documented; creating doi's for contaminant database contents.  Input data such as chromosome sequence is very large; currently using a subset contaminant database. Implementation of Docker ongoing.
 
