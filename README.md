@@ -1,4 +1,4 @@
-# Contamination Screening Pipeline for External Users
+# Genome Contamination Screening Pipeline Implemented in CWL for External Users
 
 ## Awesome Logo
 
