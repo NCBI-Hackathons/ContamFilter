@@ -1,0 +1,3 @@
+query:
+  class: File
+  path: /home/ubuntu/data/test/pa_test.fa
