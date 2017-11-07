@@ -1,4 +1,4 @@
-# Genome Contamination Screening Pipeline Implemented in CWL for External Users
+# ContamFilter: Genome Contamination Screening Pipeline Implemented in CWL for External Users
 
 ## 
 ![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Logo.png?sanitize=true)
