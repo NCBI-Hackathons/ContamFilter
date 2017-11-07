@@ -7,4 +7,6 @@ inputs:
     type: [File]
     inputBinding:
       position: 1
-outputs: []
+outputs:
+  filtered_hits:
+    type: stdout

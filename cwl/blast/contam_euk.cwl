@@ -10,7 +10,7 @@ inputs:
 outputs:
   - id: result
     type: File
-    outputSource: blast_euk/output
+    outputSource: filter/filtered_hits
 
 hints:
   - class: DockerRequirement
@@ -22,3 +22,8 @@ steps:
     in:
       query: genome
     out: [output]
+  - id: filter
+    run: awk.cwl
+    in:
+      input_file: blast_euk/output
+    out: [filtered_hits]
