@@ -52,5 +52,4 @@ steps:
       input_common: filter_common/output
       input_mito: filter_mito/output
       input_adaptor: filter_adaptor/output
-      output_file: combined_output.gff
     out: [output]

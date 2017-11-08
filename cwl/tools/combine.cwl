@@ -13,13 +13,8 @@ inputs:
     inputBinding:
       position: 2
       prefix: --vecscreen_adaptor
-  - id: output_file
-    type: [File]
-    inputBinding:
-      position: 3
-      prefix: -o
 outputs:
   - id: output
     type: File
     outputBinding:
-      glob: $(inputs.outputfile)
+      glob: "output.gff"

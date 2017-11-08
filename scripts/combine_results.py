@@ -9,7 +9,6 @@ class CombineResults():
         self.parser = argparse.ArgumentParser(description="Combine contamination screening outputs to a single GFF3 file")
 
     def init(self):
-        self.parser.add_argument("-o","--output", required=True, type=argparse.FileType('w'))
         self.parser.add_argument("--common_contam", type=str)
         self.parser.add_argument("--mitos", type=str)
         self.parser.add_argument("--rrna", type=str)
