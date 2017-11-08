@@ -36,8 +36,9 @@ steps:
     out: [output]
 
   - id: combine
-    run: ../tools/concatenate.cwl
+    run: ../tools/combine.cwl
     in:
       input_common: filter_common/output
       input_adaptor: filter_adaptor/output
+      output_file: combined_output.gff
     out: [output]
