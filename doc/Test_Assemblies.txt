@@ -1,0 +1,48 @@
+GCA_000167515.2 Gorilla gorilla. 
+Contaminants: vector/etc, Legionella pneumophila (other bacterium). (see GCA_000167515.2_20141107)
+Size: 3,022,900 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/167/515/GCA_000167515.2_ASM16751v2/GCA_000167515.2_ASM16751v2_genomic.fna.gz
+GCA_000180115.1 Clostridium cellulovorans 743B. 
+Contaminants: adaptor (multiple matches all to one FLX adapter), Homo sapiens. (see GCA_000180115.1_20141107)
+Size: 5,122,311 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/180/115/GCA_000180115.1_ASM18011v1/GCA_000180115.1_ASM18011v1_genomic.fna.gz
+GCA_000170715.1 Beggiatoa sp. PS. 
+Contaminants: Homo sapiens, Gorilla gorilla, adaptor (several matches all to one FLX adapter). (see GCA_000170715.1_20141107)
+Size: 7,631,539 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/170/715/GCA_000170715.1_ASM17071v1/GCA_000170715.1_ASM17071v1_genomic.fna.gz
+GCA_000173135.1 Pectobacterium carotovorum subsp. brasiliensis PBR1692. 
+Contaminants: yeast, drosophila, several birds, other animals, daptor (several matches all to one FLX adapter). (see GCA_000173135.1_20141107)
+Size: 4,918,574 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/173/135/GCA_000173135.1_ASM17313v1/GCA_000173135.1_ASM17313v1_genomic.fna.gz
+GCA_000214015.1 Ostreococcus tauri (viridiplantae). 
+Contaminants: vector/etc. (see GCA_000214015.1_20140807)
+Size: 12,422,992 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/214/015/GCA_000214015.1_version_050606/GCA_000214015.1_version_050606_genomic.fna.gz
+GCA_000613005.1 Trichuris trichiura (nematode). 
+Contaminants: vector, IS insertions, E. coli, other bacterium. (see GCA_000613005.1_20140807)
+Size: 75,482,611 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/613/005/GCA_000613005.1_TTRE2.1/GCA_000613005.1_TTRE2.1_genomic.fna.gz
+GCA_000091065.1 Saccharomyces cerevisiae
+Contaminants: mito (see GCA_000091065.1_20141107)
+Size: 672,540 bp
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/091/065/GCA_000091065.1_ASM9106v1/GCA_000091065.1_ASM9106v1_genomic.fna.gz
+GCA_000275765.1 Zea mays (maize)
+Contaminants: none
+Size: 1,335,069
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/275/765/GCA_000275765.1_ZmaysB73_wgs_1.0/GCA_000275765.1_ZmaysB73_wgs_1.0_genomic.fna.gz
+GCA_000325555.1 Bombyx mori (domestic silkworm)
+Contaminants: IS, vector, adaptor (see GCA_000325555.1_20140807)
+Size: 1,389,185
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/325/555/GCA_000325555.1_ASM32555v1/GCA_000325555.1_ASM32555v1_genomic.fna.gz
+GCA_000442295.1 Homo sapiens (human)
+Contaminants: none
+Size: 17,129,356
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/442/295/GCA_000442295.1_RP11_1.0_unmatched_regions/GCA_000442295.1_RP11_1.0_unmatched_regions_genomic.fna.gz
+GCA_000180715.1 Rattus norvegicus (Norway rat)
+Contaminants: vector, bacteria. (see GCA_000180715.1_20170119)
+Size: 21,587,496
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/180/715/GCA_000180715.1_ASM18071v1/GCA_000180715.1_ASM18071v1_genomic.fna.gz
+GCA_900006815.1 human gut metagenome (metagenomes)
+Contaminants: none (see GCA_900006815.1_20170117)
+Size: 1,772,111
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/006/815/GCA_900006815.1_mA11/GCA_900006815.1_mA11_genomic.fna.gz
