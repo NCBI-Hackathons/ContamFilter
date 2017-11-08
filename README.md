@@ -12,7 +12,7 @@ NCBI implements a contamination-screening pipeline for screening of technical an
 The goal of this project is to implement an externalized version of the pipeline and provide functionality for searches using user-defined contamination files and taxonomic subsets. Pipeline uses Common Workflow Language (CWL) with Docker, incorporating the original . 
 
 ##
-![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Workflow.png?sanitize=true)
+![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_workflow.png?sanitize=true)
 ##
 ## Key tasks, current roadblocks.
 Current status: 
