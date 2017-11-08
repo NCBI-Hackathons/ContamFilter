@@ -18,6 +18,20 @@ The goal of this project is to implement an externalized version of the pipeline
 
 The above image was generated from the workflow in this GitHub project, via the [Common Workflow Language Viewer](https://view.commonwl.org/workflows/github.com/NCBI-Hackathons/ContamFilter/blob/master/cwl/workflow/contam_euk.cwl).
 
+## How to run
+```bash
+# Create a Python envionment with a CWL runner.
+virtualenv venv
+. venv/bin/activate
+pip install cwlref-runner
+git clone https://github.com/NCBI-Hackathons/ContamFilter.git
+
+# Edit the input parameters to provide the path to your sequence data
+vi ContamFilter/cwl/workflow/contam_euk.yml
+
+# Run the pipeline
+cwl-runner ContamFilter/cwl/workflow/contam_euk.cwl ContamFilter/cwl/workflow/contam_euk.yml
+```
 ## Key tasks, current roadblocks.
 Current status: 
 CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
