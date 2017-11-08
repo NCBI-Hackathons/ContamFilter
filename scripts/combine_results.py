@@ -18,7 +18,7 @@ class CombineResults():
     def run(self):
         args = self.parser.parse_args()
 
-        self.writer = csv.writer(args.output, "excel-tab")
+        self.writer = csv.writer("combined_hits.gff", "excel-tab")
         self.writer.writerow(["##gff-version 3"])
 
         self.hits = []
