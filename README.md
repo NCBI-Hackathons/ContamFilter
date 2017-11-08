@@ -29,9 +29,6 @@ Contamination sequence files include:
 
 Roadblocks: NCBI Internal pipeline C++ code and toolkit is not accessible externally; mitigated by obtaining original shell scripts.  Contamination sequence databases are not documented; creating doi's for contaminant database contents.  Input data such as chromosome sequence is very large; currently using a subset contaminant database. Implementation of Docker ongoing.
 
-
-![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/contam.svg?sanitize=true)
-
 ## Motivation
 Implement a sequence contamination screening pipeline using Common Workflow Language (CWL) 
 
