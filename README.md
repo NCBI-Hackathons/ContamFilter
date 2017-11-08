@@ -13,8 +13,7 @@ The goal of this project is to implement an externalized version of the pipeline
 
 ##
 ![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Workflow.png?sanitize=true)
-
-
+##
 ## Key tasks, current roadblocks.
 Current status: 
 CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
