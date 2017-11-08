@@ -1,5 +1,6 @@
 # Set the base image to Ubuntu
 FROM ubuntu:16.04
+ARG GIT_COMMIT=unknown
 
 # File Author / Maintainer
 #MAINTAINER Dan Rausch <dan.rausch@gmail.com>
@@ -98,7 +99,13 @@ WORKDIR /home/ubuntu/contam-dbs/UniVec/
 RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec 
 RUN makeblastdb -in UniVec -dbtype nucl
 
+# clone the ContaminationScreening github repo
 WORKDIR /home/ubuntu
+RUN GIT_COMMIT=${GIT_COMMIT} git clone https://github.com/NCBI-Hackathons/ContaminationScreen.git
+RUN chmod 775 ContaminationScreen/scripts/*
+RUN cp ContaminationScreen/scripts/* /home/ubuntu/bin/.
 
+
+WORKDIR /home/ubuntu
 CMD ["/bin/bash"]
 
