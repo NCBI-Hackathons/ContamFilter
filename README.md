@@ -38,6 +38,9 @@ docker images
 
 # Run an individual command to see if the image is working
 docker run blast echo "hello!"
+
+# Print a list of applications loaded on this image
+docker run blast ls /home/ubuntu/bin/
 ```
 
 ### Running CWL
