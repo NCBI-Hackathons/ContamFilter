@@ -109,7 +109,7 @@ Caveats for Docker:
 2. Alternatives such as Singularity may gain traction and support in tooling, but that day is not today.
 
 Why Contamination Screening as a tool for the external community:
-1. Long-standing requests from submitters. Talk to Karen Clark.
+1. Long-standing requests from submitters.
 2. Faster feedback hence turnaround for submissions.
 3. Lack of transparency: Documentation for the existing production process lacks full details and may have diverged from what is actually performed.
 4. Savings on computational costs: Could use a signature to sign submissions which have been pre-screened.
