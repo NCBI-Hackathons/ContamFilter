@@ -1,5 +1,6 @@
 # Set the base image to Ubuntu
 FROM ubuntu:16.04
+ARG GIT_COMMIT=unknown
 
 # File Author / Maintainer
 #MAINTAINER Dan Rausch <dan.rausch@gmail.com>
