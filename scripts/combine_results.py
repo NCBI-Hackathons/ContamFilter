@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import csv
 import argparse
 
 class CombineResults():
@@ -32,6 +33,12 @@ class CombineResults():
             pass
 
         print "hello world!"
+
+    def common_contam(self, filename):
+        with open(filename, 'r') as csvfile:
+            hits_reader = csv.reader(csvfile, delimiter='\t')
+            for row in hits_reader:
+                print "{0} {1} {2}".format(row[0], row[6], row[7])
 
 if __name__ == "__main__":
     cr = CombineResults()
