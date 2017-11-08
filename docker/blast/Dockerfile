@@ -98,7 +98,13 @@ WORKDIR /home/ubuntu/contam-dbs/UniVec/
 RUN wget ftp://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec 
 RUN makeblastdb -in UniVec -dbtype nucl
 
+# clone the ContaminationScreening github repo
 WORKDIR /home/ubuntu
+RUN git clone https://github.com/NCBI-Hackathons/ContaminationScreen.git
+RUN chmod 775 ContaminationScreen/scripts/*
+RUN cp ContaminationScreen/scripts/* /home/ubuntu/bin/.
 
+
+WORKDIR /home/ubuntu
 CMD ["/bin/bash"]
 
