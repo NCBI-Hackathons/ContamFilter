@@ -14,12 +14,12 @@ outputs:
 
 steps:
   - id: blast_euk
-    run: blast.cwl
+    run: ../tools/blast.cwl
     in:
       query: genome
     out: [output]
   - id: filter
-    run: awk.cwl
+    run: ../tools/awk.cwl
     in:
       input_file: blast_euk/output
     out: [filtered_hits]
