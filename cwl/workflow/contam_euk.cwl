@@ -4,22 +4,34 @@ cwlVersion: v1.0
 class: Workflow
 
 inputs:
-  - id: genome
+  - id: sequence
     type: File
 
 outputs:
   - id: result
     type: File
-    outputSource: filter/filtered_hits
+    outputSource: combine/output
 
 steps:
-  - id: blast_euk
-    run: ../tools/blast.cwl
+  - id: blast_common
+    run: ../tools/blast_euk.cwl
     in:
-      query: genome
+      query: sequence
     out: [output]
-  - id: filter
-    run: ../tools/awk.cwl
+  - id: filter_common
+    run: ../tools/filter_common.cwl
     in:
-      input_file: blast_euk/output
-    out: [filtered_hits]
+      input_file: blast_common/output
+    out: [output]
+
+#  - id: blast_common
+#    run: ../tools/blast_euk.cwl
+#    in:
+#      query: sequence
+#    out: [output]
+
+  - id: combine
+    run: ../tools/concatenate.cwl
+    in:
+      input_common: filter_common/output
+    out: [output]
