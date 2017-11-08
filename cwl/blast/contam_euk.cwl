@@ -12,10 +12,6 @@ outputs:
     type: File
     outputSource: filter/filtered_hits
 
-hints:
-  - class: DockerRequirement
-    dockerPull: blast
-
 steps:
   - id: blast_euk
     run: blast.cwl
