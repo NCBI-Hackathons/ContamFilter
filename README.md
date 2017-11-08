@@ -1,7 +1,7 @@
 # ContamFilter: Genome Contamination Screening Pipeline Implemented in CWL for External Users
 
 ## 
-![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Logo.png?sanitize=true)
+![ContamFilter Logo](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_Logo.png?sanitize=true)
 
 ## Introduction 
 Both technical and biological contaminants may appear in raw, assembled, and annotated sequence data.  Contaminants may include ‘technical’ sequences such as vector and adapter sequence or ‘biological’ sequences derived from commensal or parasitic DNA isolated with the parent samples, or may result from mislabeling of read data. These may include mitochondrial sequence, rRNA, and can be viral, microbial, or eukaryotic derived sequence.  Legitimate (non-contaminating) may be present in genomic read data or assemblies, representing horizontal gene transfer events.
@@ -10,9 +10,12 @@ NCBI implements a contamination-screening pipeline for screening of technical an
 
 The goal of this project is to implement an externalized version of the pipeline and provide functionality for searches using user-defined contamination files and taxonomic subsets. Pipeline uses Common Workflow Language (CWL) with Docker, incorporating the original . 
 
-##
-![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_workflow.png?sanitize=true)
-##
+## Planned Pipeline
+![Planned workflow](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/ContamFilter_workflow.png?sanitize=true)
+
+## Currently Implemented Pipeline
+![Currently implemented workflow](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/graph.png?sanitize=true)
+
 ## Key tasks, current roadblocks.
 Current status: 
 CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
