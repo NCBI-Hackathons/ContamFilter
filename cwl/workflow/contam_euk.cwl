@@ -24,14 +24,15 @@ steps:
       input_file: blast_common/output
     out: [output]
 
-#  - id: blast_common
-#    run: ../tools/blast_euk.cwl
-#    in:
-#      query: sequence
-#    out: [output]
+  - id: vecscreen_adaptor
+    run: ../tools/vecscreen_adaptor.cwl
+    in:
+      query: sequence
+    out: [output]
 
   - id: combine
     run: ../tools/concatenate.cwl
     in:
       input_common: filter_common/output
+      input_adaptor: vecscreen_adaptor/output
     out: [output]

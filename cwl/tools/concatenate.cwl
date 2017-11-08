@@ -8,6 +8,10 @@ inputs:
     type: [File]
     inputBinding:
       position: 1
+  - id: input_adaptor
+    type: [File]
+    inputBinding:
+      position: 2
 outputs:
   - id: output
     type: File
