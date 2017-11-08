@@ -7,7 +7,7 @@ ARG GIT_COMMIT=unknown
 
 # Setup packages
 USER root
-RUN apt-get -y -m update && apt-get install -y wget unzip zip libgsl-dev libgsl2 bzip2 build-essential git python
+RUN apt-get -y -m update && apt-get install -y wget unzip zip libgsl-dev libgsl2 bzip2 build-essential git python gawk
 
 # switch back to the ubuntu user so this tool (and the files written) are not owned by root
 RUN groupadd -r -g 1000 ubuntu && useradd -r -g ubuntu -u 1000 ubuntu
