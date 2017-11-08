@@ -65,7 +65,7 @@ Main impediments during this Hackathon:
 3. Data objects, such as screening databases, are not available in public repositories: sequences not submitted to ID/Genbank, FASTA files are on private FTP rather than public repositories (e.g. Zenodo).
 2. CWL documentation is inadequate.
 
-Takehome lessones:
+Take home lessons:
 1. Need to make our internal tools more accessible. Python tools are available via simple 'pip install'. The Core Toolkit is hard to install, and tools like alignment filtering/sorting/formatting (align_filter, align_sort, align_format) are not public.
 2. Importance of understanding dependencies, including infrastructure dependencies.
 3. Focused effort on one task. Creating a screening tool for public consumption has been long-requested task but never implemented.
