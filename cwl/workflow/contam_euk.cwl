@@ -29,10 +29,15 @@ steps:
     in:
       query: sequence
     out: [output]
+  - id: filter_adaptor
+    run: ../tools/filter_adaptor.cwl
+    in:
+      input_file: vecscreen_adaptor/output
+    out: [output]
 
   - id: combine
     run: ../tools/concatenate.cwl
     in:
       input_common: filter_common/output
-      input_adaptor: vecscreen_adaptor/output
+      input_adaptor: filter_adaptor/output
     out: [output]
