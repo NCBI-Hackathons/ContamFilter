@@ -100,7 +100,7 @@ RUN makeblastdb -in UniVec -dbtype nucl
 
 # clone the ContaminationScreening github repo
 WORKDIR /home/ubuntu
-RUN git clone https://github.com/NCBI-Hackathons/ContaminationScreen.git
+RUN GIT_COMMIT=${GIT_COMMIT} git clone https://github.com/NCBI-Hackathons/ContaminationScreen.git
 RUN chmod 775 ContaminationScreen/scripts/*
 RUN cp ContaminationScreen/scripts/* /home/ubuntu/bin/.
 
