@@ -21,7 +21,7 @@ The above image was generated from the workflow in this GitHub project, via the 
 ## How to run
 
 ### Installing Docker
-Follow instructions to install Docker on the system: https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-docker-ce-1
+Follow instructions to [install Docker CE](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-docker-ce-1) on the system. 
 
 ```bash
 # Get the ContamFilter Repo
