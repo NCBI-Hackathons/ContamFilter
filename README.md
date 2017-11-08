@@ -15,6 +15,7 @@ The goal of this project is to implement an externalized version of the pipeline
 
 ## Currently Implemented Pipeline
 ![Currently implemented workflow](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/graph.png?sanitize=true)
+The above image was generated from the workflow in this GitHub project, via [ViewCWL](https://view.commonwl.org/workflows/github.com/NCBI-Hackathons/ContaminationScreen/blob/master/cwl/workflow/contam_euk.cwl).
 
 ## Key tasks, current roadblocks.
 Current status: 
