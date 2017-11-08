@@ -83,8 +83,8 @@ There is also a Docker image for hosting the main website. This should only be u
   
 ![Alt diagram](https://raw.githubusercontent.com/NCBI-Hackathons/ContaminationScreen/master/doc/contam.svg?sanitize=true)
 
-## Elevator Talk
-Implement a sequence contamination screening pipeline using Common Workflow Language (CWL), WDL or NextFlow B2E11 Ostell
+## Motivation
+Implement a sequence contamination screening pipeline using Common Workflow Language (CWL) 
 
 Why CWL:
 1. An emerging standard with no clear alternative winner for workflow languages at this time.
