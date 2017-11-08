@@ -19,6 +19,28 @@ The goal of this project is to implement an externalized version of the pipeline
 The above image was generated from the workflow in this GitHub project, via the [Common Workflow Language Viewer](https://view.commonwl.org/workflows/github.com/NCBI-Hackathons/ContamFilter/blob/master/cwl/workflow/contam_euk.cwl).
 
 ## How to run
+
+### Installing Docker
+Follow instructions to install Docker on the system: https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-docker-ce-1
+
+```bash
+# Get the ContamFilter Repo
+git clone https://github.com/NCBI-Hackathons/ContamFilter.git
+
+# Go to the docker dirctory
+cd ContamFilter/docker/blast
+
+# Build the Docker image
+docker build -t blast .
+
+# See that the Docker image is available
+docker images
+
+# Run an individual command to see if the image is working
+docker run blast echo "hello!"
+```
+
+### Running CWL
 ```bash
 # Create a Python envionment with a CWL runner.
 virtualenv venv
