@@ -54,6 +54,38 @@ vi ContamFilter/cwl/workflow/contam_euk.yml
 # Run the pipeline
 cwl-runner ContamFilter/cwl/workflow/contam_euk.cwl ContamFilter/cwl/workflow/contam_euk.yml
 ```
+## Results
+combined_hits.gff
+
+```
+##gff-version 3
+Contig117697.1  .   region  1   37  .   .   .   Note=vecscreen_adaptors
+Contig240124.2  .   region  37660   37707   .   .   .   Note=vecscreen_adaptors
+Contig267453.2  .   region  5380    5428    .   .   .   Note=vecscreen_adaptors
+Contig283602.1  .   region  110935  110984  .   .   .   Note=vecscreen_adaptors
+Contig291655.1  .   region  47763   47805   .   .   .   Note=vecscreen_adaptors
+Contig296353.2  .   region  21931   21963   .   .   .   Note=vecscreen_adaptors
+Contig308584.2  .   region  4404    4441    .   .   .   Note=vecscreen_adaptors
+Contig319333.1  .   region  19503   19535   .   .   .   Note=vecscreen_adaptors
+Contig320691.1  .   region  9558    9590    .   .   .   Note=vecscreen_adaptors
+Contig322210.1  .   region  19475   19522   .   .   .   Note=vecscreen_adaptors
+Contig324115.2  .   region  10214   10246   .   .   .   Note=vecscreen_adaptors
+Contig324115.2  .   region  10525   10557   .   .   .   Note=vecscreen_adaptors
+Contig324115.2  .   region  63877   63921   .   .   .   Note=vecscreen_adaptors
+Contig328006.2  .   region  20001   20036   .   .   .   Note=vecscreen_adaptors
+Contig332010.1  .   region  37268   37303   .   .   .   Note=vecscreen_adaptors
+Contig338096.1  .   region  52109   52156   .   .   .   Note=vecscreen_adaptors
+Contig339890.2  .   region  2540    2575    .   .   .   Note=vecscreen_adaptors
+Contig341351.1  .   region  10544   10602   100.000 .   .   Note=common_contam
+Contig341351.1  .   region  10545   10602   .   .   .   Note=vecscreen_adaptors
+Contig344819.2  .   region  24014   24057   .   .   .   Note=vecscreen_adaptors
+Contig346119.1  .   region  7802    7859    .   .   .   Note=vecscreen_adaptors
+Contig346119.1  .   region  7802    7860    100.000 .   .   Note=common_contam
+Contig348759.1  .   region  51447   51496   .   .   .   Note=vecscreen_adaptors
+Contig349176.2  .   region  58275   58322   .   .   .   Note=vecscreen_adaptors
+Contig89794.1   .   region  21267   21299   .   .   .   Note=vecscreen_adaptors
+```
+
 ## Key tasks, current roadblocks.
 Current status: 
 CWL set up to run BLAST using test genomic sequence dataset against reference contaminant sequence files, providing output listing putative contaminant sequence hits, representing minimum functionality of NCBI internal contamination workflow.
