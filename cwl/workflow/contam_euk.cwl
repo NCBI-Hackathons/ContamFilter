@@ -10,7 +10,7 @@ inputs:
 outputs:
   - id: result
     type: File
-    outputSource: filter_common/filtered_hits
+    outputSource: combine/output
 
 steps:
   - id: blast_common
@@ -22,4 +22,16 @@ steps:
     run: ../tools/filter_common.cwl
     in:
       input_file: blast_common/output
-    out: [filtered_hits]
+    out: [output]
+
+#  - id: blast_common
+#    run: ../tools/blast_euk.cwl
+#    in:
+#      query: sequence
+#    out: [output]
+
+  - id: combine
+    run: ../tools/concatenate.cwl
+    in:
+      input_common: filter_common/output
+    out: [output]

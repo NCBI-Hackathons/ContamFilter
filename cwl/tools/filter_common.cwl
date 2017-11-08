@@ -9,7 +9,7 @@ inputs:
     inputBinding:
       position: 1
 outputs:
-  - id: filtered_hits
+  - id: output
     type: File
     outputBinding:
       glob: awk_output.txt
