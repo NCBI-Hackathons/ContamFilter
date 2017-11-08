@@ -18,7 +18,7 @@ class CombineResults():
     def run(self):
         args = self.parser.parse_args()
 
-        self.writer = csv.writer("combined_hits.gff", "excel-tab")
+        self.writer = csv.writer(open("combined_hits.gff", "w"), "excel-tab")
         self.writer.writerow(["##gff-version 3"])
 
         self.hits = []
@@ -54,7 +54,7 @@ class CombineResults():
             hits_reader = csv.reader(csvfile, delimiter='\t')
             for row in hits_reader:
                 if row[0].startswith('VecScreen_Strong'):
-                    output = [row[1], ".", "region", row[2], row[3], ".", ".", ".", "Note={0}".vecscreen_type]
+                    output = [row[1], ".", "region", row[2], row[3], ".", ".", ".", "Note={0}".format(vecscreen_type)]
                     self.hits.append(output)
 
 
