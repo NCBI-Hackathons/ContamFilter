@@ -1,5 +1,4 @@
 cwlVersion: v1.0
-#cwlVersion: cwl:draft-3
 class: CommandLineTool
 hints:
   - class: DockerRequirement

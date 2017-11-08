@@ -24,6 +24,17 @@ steps:
       input_file: blast_common/output
     out: [output]
 
+  - id: blast_mito
+    run: ../tools/blast_mito.cwl
+    in:
+      query: sequence
+    out: [output]
+  - id: filter_mito
+    run: ../tools/filter_mito.cwl
+    in:
+      input_file: blast_mito/output
+    out: [output]
+
   - id: vecscreen_adaptor
     run: ../tools/vecscreen_adaptor.cwl
     in:
@@ -39,6 +50,7 @@ steps:
     run: ../tools/combine.cwl
     in:
       input_common: filter_common/output
+      input_mito: filter_mito/output
       input_adaptor: filter_adaptor/output
       output_file: combined_output.gff
     out: [output]
