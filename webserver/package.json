@@ -1,0 +1,14 @@
+{
+  "name": "contamination",
+  "version": "0.0.0",
+  "description": "Contamination screen",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.0.0",
+    "opn": "^5.0.0"
+  },
+  "private": true
+}
